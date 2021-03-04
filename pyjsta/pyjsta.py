@@ -1,7 +1,16 @@
 import numpy as np
 
-# a clone of Rstats rep
 def rep(x, times = 1, each = 1, length_out = None):
+    """A clone of rstats rep
+
+    Parameters
+    ----------
+    x : list
+
+    Examples
+    --------
+    pyjsta.rep([1,2,3], 2, 1)
+    """
     if not isinstance(times, list):
         times = [times]
 
