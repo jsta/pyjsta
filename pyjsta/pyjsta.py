@@ -10,6 +10,7 @@ def rep(x, times = 1, each = 1, length_out = None):
     Examples
     --------
     pyjsta.rep([1,2,3], 2, 1)
+
     """
     if not isinstance(times, list):
         times = [times]
@@ -26,9 +27,17 @@ def rep(x, times = 1, each = 1, length_out = None):
     else:
         return res[0:length_out]
 
-# a clone of Rstats table
-# https://stackoverflow.com/a/43096495/3362993
 def table(a):
+    """A clone of rstats table
+    https://stackoverflow.com/a/43096495/3362993
+
+    Parameters
+    ----------
+    a : a list (or list-like object)
+
+    Examples
+    --------
+    pyjsta.table([1,2,3])
+    """
     unique, counts = np.unique(a, return_counts=True)
     return np.asarray((unique, counts)).T
-
