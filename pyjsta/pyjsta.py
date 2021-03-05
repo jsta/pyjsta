@@ -1,6 +1,7 @@
 import numpy as np
 
-def rep(x, times = 1, each = 1, length_out = None):
+
+def rep(x, times=1, each=1, length_out=None):
     """A clone of rstats rep
 
     Parameters
@@ -15,17 +16,18 @@ def rep(x, times = 1, each = 1, length_out = None):
     if not isinstance(times, list):
         times = [times]
 
-    res = ''.join([str(i) * each for i in x])
+    res = "".join([str(i) * each for i in x])
 
     if len(times) > 1:
-        res = ''.join(str(i) * m for i, m in zip(x, times))
+        res = "".join(str(i) * m for i, m in zip(x, times))
     else:
-        res = ''.join(res * times[0])
+        res = "".join(res * times[0])
 
     if length_out is None:
         return res
     else:
         return res[0:length_out]
+
 
 def table(a):
     """A clone of rstats table
