@@ -10,15 +10,4 @@ Some helper functions. Mostly clones of rstats functions.
 
 ### Usage
 
-```python
-import pyjsta
-pyjsta.rrep(["1", "2"], 3)
-```
-
-```python
-import pyjsta
-import pandas as pd
-df = pd.DataFrame(zip(["a"], ["d"]), columns = ["b", "c"])
-# pyjsta.md_table(df, "df.pdf")
-print(pyjsta.md_table(df))
-```
+See docs at: https://jsta.github.io/pyjsta/
