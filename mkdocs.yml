@@ -1,0 +1,13 @@
+site_name: pyjsta
+
+repo_url: https://github.com/jsta/pyjsta/
+
+nav:
+    - Home: index.md
+
+theme:
+  name: "readthedocs"
+
+plugins:
+- search
+- mkdocstrings
