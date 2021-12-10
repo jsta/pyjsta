@@ -19,12 +19,6 @@ pyjsta.rrep(["1", "2"], 3)
 import pyjsta
 import pandas as pd
 df = pd.DataFrame(zip(["a"], ["d"]), columns = ["b", "c"])
-pyjsta.pdf_table(df, "df.pdf")
-print(pyjsta.pdf_table(df))
-```
-
-### Docs
-
-```shell
-mkdocs serve
+# pyjsta.md_table(df, "df.pdf")
+print(pyjsta.md_table(df))
 ```
