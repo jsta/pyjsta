@@ -2,7 +2,7 @@ import numpy as np
 
 
 def rrep(x, times=1, each=1, length_out=None):
-    """[summary]
+    """A clone of rstats rep
 
     Args:
         x ([type]): [description]
@@ -18,7 +18,7 @@ def rrep(x, times=1, each=1, length_out=None):
      utils.rrep([1,2,3], 2, 1)
     ```       
     """
-    
+
     if not isinstance(times, list):
         times = [times]
 
@@ -39,13 +39,13 @@ def rtable(a):
     """A clone of rstats table
     https://stackoverflow.com/a/43096495/3362993
 
-    Parameters
-    ----------
+    Parameters:    
     a : a list (or list-like object)
 
-    Examples
-    --------
+    Examples:
+    ```python
     pyjsta.rtable([1,2,3])
+    ```
     """
     unique, counts = np.unique(a, return_counts=True)
     return np.asarray((unique, counts)).T
