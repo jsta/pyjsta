@@ -54,6 +54,8 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">API</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rrep">rrep</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -93,7 +95,8 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="rrep">rrep</h2>
+                <h1 id="rstats-clone-functions">rstats clone functions</h1>
+<h2 id="rrep">rrep</h2>
 
 
   <div class="doc doc-object doc-function">
@@ -101,7 +104,7 @@
 <a id="pyjsta.utils.rrep"></a>
     <div class="doc doc-contents first">
 
-      <p>[summary]</p>
+      <p>A clone of rstats rep</p>
 
 <table class="field-list">
   <colgroup>
@@ -141,6 +144,101 @@
 <p><strong>Examples:</strong></p>
     
       <pre><code class="language-python"> utils.rrep([1,2,3], 2, 1)
+</code></pre>
+
+    </div>
+
+  </div>
+
+<h1 id="table-functions">table functions</h1>
+<h2 id="plotly_table">plotly_table</h2>
+
+
+  <div class="doc doc-object doc-function">
+
+<a id="pyjsta.table.plotly_table"></a>
+    <div class="doc doc-contents first">
+
+      <p>[summary]</p>
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li><p><strong>df</strong> (<code>[type]</code>) – [description]</p></li>
+            <li><p><strong>pdf_path</strong> (<code>[type]</code>) – [description]. Defaults to None.</p></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+    <th class="field-name">Returns:</th>
+    <td class="field-body">
+        <ul class="first simple">
+          <li><p><code>[type]</code> – [description]</p></li>
+        </ul>
+    </td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Examples:</strong></p>
+    
+      <pre><code class="language-python">import pandas as pd
+# hgt = 400
+# wth = hgt * 1.55
+df = pd.DataFrame(zip([&quot;0.01544&quot;], [&quot;d&quot;]), columns = [&quot;b&quot;, &quot;c&quot;])    
+pyjsta.plotly_table(df, col_format = [&quot;.2f&quot;, &quot;&quot;])    
+</code></pre>
+
+    </div>
+
+  </div>
+
+<h2 id="md_table">md_table</h2>
+
+
+  <div class="doc doc-object doc-function">
+
+<a id="pyjsta.table.md_table"></a>
+    <div class="doc doc-contents first">
+
+      <p>Create a markdown/pdf table from a Pandas DataFrame</p>
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li><p><strong>df</strong> (<code>[type]</code>) – [description]</p></li>
+            <li><p><strong>pdf_path</strong> (<code>[type]</code>) – [description]    </p></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Examples:</strong></p>
+    
+      <pre><code class="language-python">import pandas as pd
+df = pd.DataFrame(zip([&quot;a&quot;], [&quot;d&quot;]), columns = [&quot;b&quot;, &quot;c&quot;])
+md_table(df, &quot;test.pdf&quot;)
 </code></pre>
 
     </div>
