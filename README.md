@@ -10,4 +10,4 @@ Some helper functions. Mostly clones of rstats functions.
 
 ### Usage
 
-See docs at: https://jsta.github.io/pyjsta/
+See docs at: [https://jsta.github.io/pyjsta/](https://jsta.github.io/pyjsta/)
