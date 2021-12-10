@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 
 def plotly_table(df, col_format=[], pdf_path=None, hgt=None, wth=None):
-    """[summary]
+    """View or print a pandas DataFrame as a plotly table 
 
     Args:
         df ([type]): [description]
@@ -48,7 +48,7 @@ def plotly_table(df, col_format=[], pdf_path=None, hgt=None, wth=None):
 
 
 def md_table(df, pdf_path=None):
-    """Create a markdown/pdf table from a Pandas DataFrame
+    """View or print a pandas DataFrame as a markdown table     
 
     Args:
         df ([type]): [description]
@@ -58,7 +58,7 @@ def md_table(df, pdf_path=None):
     ```python
     import pandas as pd
     df = pd.DataFrame(zip(["a"], ["d"]), columns = ["b", "c"])
-    md_table(df, "test.pdf")
+    pyjsta.md_table(df, "test.pdf")
     ```
     """
     if pdf_path is None:

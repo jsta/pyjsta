@@ -15,7 +15,7 @@ def rrep(x, times=1, each=1, length_out=None):
 
     Examples:
     ```python
-     utils.rrep([1,2,3], 2, 1)
+     pyjsta.rrep([1,2,3], 2, 1)
     ```       
     """
 
