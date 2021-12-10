@@ -2,17 +2,23 @@ import numpy as np
 
 
 def rrep(x, times=1, each=1, length_out=None):
-    """A clone of rstats rep
+    """[summary]
 
-    Parameters
-    ----------
-    x : list
+    Args:
+        x ([type]): [description]
+        times (int, optional): [description]. Defaults to 1.
+        each (int, optional): [description]. Defaults to 1.
+        length_out ([type], optional): [description]. Defaults to None.
 
-    Examples
-    --------
-    pyjsta.rep([1,2,3], 2, 1)
+    Returns:
+        [type]: [description]
 
+    Examples:
+    ```python
+     pyjsta.rrep([1,2,3], 2, 1)
+    ```       
     """
+    
     if not isinstance(times, list):
         times = [times]
 
