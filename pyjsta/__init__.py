@@ -1,2 +1,3 @@
-from .pyjsta import rep
-from .pyjsta import table
+from .pyjsta import rrep
+from .pyjsta import rtable
+from .table import pdf_table

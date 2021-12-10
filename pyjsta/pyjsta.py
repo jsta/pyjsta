@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def rep(x, times=1, each=1, length_out=None):
+def rrep(x, times=1, each=1, length_out=None):
     """A clone of rstats rep
 
     Parameters
@@ -29,7 +29,7 @@ def rep(x, times=1, each=1, length_out=None):
         return res[0:length_out]
 
 
-def table(a):
+def rtable(a):
     """A clone of rstats table
     https://stackoverflow.com/a/43096495/3362993
 
@@ -39,7 +39,7 @@ def table(a):
 
     Examples
     --------
-    pyjsta.table([1,2,3])
+    pyjsta.rtable([1,2,3])
     """
     unique, counts = np.unique(a, return_counts=True)
     return np.asarray((unique, counts)).T
