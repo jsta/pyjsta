@@ -143,7 +143,29 @@
 </table>
 <p><strong>Examples:</strong></p>
     
-      <pre><code class="language-python"> utils.rrep([1,2,3], 2, 1)
+      <pre><code class="language-python"> pyjsta.rrep([1,2,3], 2, 1)
+</code></pre>
+
+    </div>
+
+  </div>
+
+<h2 id="rtable">rtable</h2>
+
+
+  <div class="doc doc-object doc-function">
+
+<a id="pyjsta.utils.rtable"></a>
+    <div class="doc doc-contents first">
+
+      <p>A clone of rstats table
+https://stackoverflow.com/a/43096495/3362993</p>
+<p>Parameters:  <br />
+a : a list (or list-like object)</p>
+
+<p><strong>Examples:</strong></p>
+    
+      <pre><code class="language-python">pyjsta.rtable([1,2,3])
 </code></pre>
 
     </div>
@@ -159,7 +181,7 @@
 <a id="pyjsta.table.plotly_table"></a>
     <div class="doc doc-contents first">
 
-      <p>[summary]</p>
+      <p>View or print a pandas DataFrame as a plotly table </p>
 
 <table class="field-list">
   <colgroup>
@@ -215,7 +237,7 @@ pyjsta.plotly_table(df, col_format = [&quot;.2f&quot;, &quot;&quot;])
 <a id="pyjsta.table.md_table"></a>
     <div class="doc doc-contents first">
 
-      <p>Create a markdown/pdf table from a Pandas DataFrame</p>
+      <p>View or print a pandas DataFrame as a markdown table     </p>
 
 <table class="field-list">
   <colgroup>
@@ -238,7 +260,7 @@ pyjsta.plotly_table(df, col_format = [&quot;.2f&quot;, &quot;&quot;])
     
       <pre><code class="language-python">import pandas as pd
 df = pd.DataFrame(zip([&quot;a&quot;], [&quot;d&quot;]), columns = [&quot;b&quot;, &quot;c&quot;])
-md_table(df, &quot;test.pdf&quot;)
+pyjsta.md_table(df, &quot;test.pdf&quot;)
 </code></pre>
 
     </div>
