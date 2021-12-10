@@ -4,7 +4,9 @@ repo_url: https://github.com/jsta/pyjsta/
 
 nav:
     - Home: index.md
-    - API: api.md
+    - API:
+      - rstats clone functions: rstats.md
+      - table functions: tables.md    
 
 theme:
   name: "readthedocs"

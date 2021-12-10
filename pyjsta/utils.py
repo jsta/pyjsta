@@ -2,7 +2,7 @@ import numpy as np
 
 
 def rrep(x, times=1, each=1, length_out=None):
-    """A clone of rstats rep
+    """> A clone of rstats rep
 
     Args:
         x ([type]): [description]
@@ -36,11 +36,12 @@ def rrep(x, times=1, each=1, length_out=None):
 
 
 def rtable(a):
-    """A clone of rstats table
-    https://stackoverflow.com/a/43096495/3362993
+    """> A clone of rstats table
 
-    Parameters:    
-    a : a list (or list-like object)
+    See [https://stackoverflow.com/a/43096495/3362993](https://stackoverflow.com/a/43096495/3362993)
+
+    Args:
+        a (list): or list-like object.
 
     Examples:
     ```python
