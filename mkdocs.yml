@@ -14,5 +14,4 @@ theme:
 plugins:
 - search
 - mkdocstrings:
-      watch:
-        - pyjsta        
+      
