@@ -1,4 +1,6 @@
+import os
 import numpy as np
+import pandas as pd # for to_csv
 
 
 def rrep(x, times=1, each=1, length_out=None):
@@ -50,3 +52,26 @@ def rtable(a):
     """
     unique, counts = np.unique(a, return_counts=True)
     return np.asarray((unique, counts)).T
+
+
+def pdappend(x, fpath):
+    """Append to csv if file does not exist
+
+    Args:
+        x (DataFrame): _description_
+        fpath (_type_): _description_
+    
+    Examples:
+    ```python
+    from pyjsta import utils
+    x = pd.DataFrame({"x":1}, index=[0])
+    fpath = "test.csv"
+    utils.pdappend(x, fpath)
+    utils.pdappend(x, fpath)
+    ```
+    """
+    if not os.path.exists(fpath):
+        x.to_csv(fpath, index=False)
+        return None
+
+    x.to_csv(fpath, mode="a", header=False, index=False)
