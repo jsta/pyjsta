@@ -6,7 +6,8 @@ nav:
     - Home: index.md
     - API:
       - rstats clone functions: rstats.md
-      - table functions: tables.md    
+      - table functions: tables.md
+      - utils functions: utils.md
 
 theme:
   name: "readthedocs"
