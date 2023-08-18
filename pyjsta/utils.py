@@ -1,6 +1,6 @@
 import os
 import numpy as np
-import pandas as pd # for to_csv
+import pandas as pd  # for to_csv
 
 
 def rrep(x, times=1, each=1, length_out=None):
@@ -18,7 +18,7 @@ def rrep(x, times=1, each=1, length_out=None):
     Examples:
     ```python
      pyjsta.rrep([1,2,3], 2, 1)
-    ```       
+    ```
     """
 
     if not isinstance(times, list):
@@ -60,7 +60,7 @@ def pdappend(x, fpath):
     Args:
         x (DataFrame): _description_
         fpath (_type_): _description_
-    
+
     Examples:
     ```python
     from pyjsta import utils
