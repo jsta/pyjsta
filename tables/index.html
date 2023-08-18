@@ -8,7 +8,7 @@
     <title>table functions - pyjsta</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../assets/_mkdocstrings.css" rel="stylesheet" />
     
       <script>
@@ -18,12 +18,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -35,7 +34,7 @@
           <a href=".." class="icon icon-home"> pyjsta
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -69,9 +68,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>API &raquo;</li>
-      <li>table functions</li>
+      <li class="breadcrumb-item active">table functions</li>
     <li class="wy-breadcrumbs-aside">
           <a href="https://github.com/jsta/pyjsta/edit/master/docs/tables.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
@@ -84,6 +83,7 @@
                 <h2 id="plotly_table">plotly_table</h2>
 
 
+
 <div class="doc doc-object doc-function">
 
 
@@ -94,58 +94,67 @@
 <p>View or print a pandas DataFrame as a plotly table </p>
 </blockquote>
 
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>df</code></td>
-          <td>
-                <code>[type]</code>
-          </td>
-          <td><p>[description]</p></td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-        <tr>
-          <td><code>pdf_path</code></td>
-          <td>
-                <code>[type]</code>
-          </td>
-          <td><p>[description]. Defaults to None.</p></td>
-          <td>
-                <code>None</code>
-          </td>
-        </tr>
-    </tbody>
-  </table>
 
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-          </td>
-          <td></td>
-        </tr>
-    </tbody>
-  </table>
 
-<p><strong>Examples:</strong></p>
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+              <b>df</b>
+                  (<code>[type]</code>)
+              –
+              <div class="doc-md-description">
+                <p>[description]</p>
+              </div>
+            </li>
+            <li>
+              <b>pdf_path</b>
+                  (<code>[type]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>[description]. Defaults to None.</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+    <th class="field-name">Returns:</th>
+    <td class="field-body">
+      <ul class="first simple">
+          <li>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+      </ul>
+    </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><strong></strong></p>
     
       <pre><code class="language-python">import pandas as pd
 # hgt = 400
@@ -159,6 +168,7 @@ pyjsta.plotly_table(df, col_format = [&quot;.2f&quot;, &quot;&quot;])
 </div><h2 id="md_table">md_table</h2>
 
 
+
 <div class="doc doc-object doc-function">
 
 
@@ -169,41 +179,44 @@ pyjsta.plotly_table(df, col_format = [&quot;.2f&quot;, &quot;&quot;])
 <p>View or print a pandas DataFrame as a markdown table     </p>
 </blockquote>
 
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>df</code></td>
-          <td>
-                <code>[type]</code>
-          </td>
-          <td><p>[description]</p></td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-        <tr>
-          <td><code>pdf_path</code></td>
-          <td>
-                <code>[type]</code>
-          </td>
-          <td><p>[description]    </p></td>
-          <td>
-                <code>None</code>
-          </td>
-        </tr>
-    </tbody>
-  </table>
 
-<p><strong>Examples:</strong></p>
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+              <b>df</b>
+                  (<code>[type]</code>)
+              –
+              <div class="doc-md-description">
+                <p>[description]</p>
+              </div>
+            </li>
+            <li>
+              <b>pdf_path</b>
+                  (<code>[type]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>[description]    </p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><strong></strong></p>
     
       <pre><code class="language-python">import pandas as pd
 df = pd.DataFrame(zip([&quot;a&quot;], [&quot;d&quot;]), columns = [&quot;b&quot;, &quot;c&quot;])
@@ -252,14 +265,15 @@ pyjsta.md_table(df, &quot;test.pdf&quot;)
     
   </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme_extra.js" defer></script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
