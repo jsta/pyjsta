@@ -1,4 +1,5 @@
 import os
+import itertools
 import numpy as np
 import pandas as pd  # for to_csv
 
@@ -75,3 +76,25 @@ def pdappend(x, fpath):
         return None
 
     x.to_csv(fpath, mode="a", header=False, index=False)
+
+
+def r_expand_grid(col_names, list_of_lists):
+    """A clone of R's expand.grid function
+
+    Args:
+        col_names (_type_): _description_
+        list_of_lists (_type_): _description_
+
+    Returns:
+        _type_: _description_
+
+    Examples:
+    ```python
+    col_names = ["one", "two"]
+    list_of_lists = [["a", "b"], ["C", "D", "E"]]
+    r_expand_grid(col_names, list_of_lists)
+    ```
+    """
+    res = pd.DataFrame(list(itertools.product(*list_of_lists)))
+    res.columns = col_names
+    return res
